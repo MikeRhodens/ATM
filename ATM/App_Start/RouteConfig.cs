@@ -15,7 +15,7 @@ namespace ATM
 
             routes.MapRoute(
               name: "foo",
-              url: "{Action}/{Bar}",
+              url: "foo/{Bar}",
               defaults: new { controller = "Home", action = "Index", bar = "Bar"}
           );
 

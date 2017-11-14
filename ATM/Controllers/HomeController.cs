@@ -22,10 +22,19 @@ namespace ATM.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "send me shit";
 
             return View();
         }
+
+        [HttpPost]
+        public ActionResult Contact(String message)
+        {
+            ViewBag.Message = "thanks";
+
+            return View();
+        }
+
         public ActionResult Foo(String Bar)
         {
 
