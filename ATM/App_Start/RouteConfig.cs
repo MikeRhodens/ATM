@@ -14,6 +14,12 @@ namespace ATM
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+              name: "foo",
+              url: "{Action}/{Bar}",
+              defaults: new { controller = "Home", action = "Index", bar = "Bar"}
+          );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }

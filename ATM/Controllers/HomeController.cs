@@ -26,5 +26,10 @@ namespace ATM.Controllers
 
             return View();
         }
+        public ActionResult Foo(String Bar)
+        {
+
+            return Content(Bar);
+        }
     }
 }
